@@ -2,13 +2,9 @@
 # redis使用指南
 
 >Auth: 王海飞
->
 >Data：2018-04-18
->
 >Email：779598160@qq.com
->
 >github：https://github.com/coco369/knowledge
->
 
 #### 背景
 
@@ -71,14 +67,10 @@ mysql作为主存储，redis作为辅助存储被用作缓存，加快访问读�
    /bin/systemctl stop  redis.service
   ```
 ##### b) 测试
-
- PING：使用客户端向 Redis 服务器发送一个 PING ，如果服务器运作正常的话，会返回一个 PONG 。通常用于测试与服务器的连接是否仍然生效，或者用于测量延迟值。
- 
-返回值：如果连接正常就返回一个 PONG ，否则返回一个连接错误。
-
-	redis 127.0.0.1:6379> ping
-	PONG
-	redis 127.0.0.1:6379>
+ PING
+     使用客户端向 Redis 服务器发送一个 PING ，如果服务器运作正常的话，会返回一个 PONG 。通常用于测试与服务器的连接是否仍然生效，或者用于测量延迟值。
+ 返回值：
+     如果连接正常就返回一个 PONG ，否则返回一个连接错误。
 
 
 #### 2.修改 redis.conf文件
